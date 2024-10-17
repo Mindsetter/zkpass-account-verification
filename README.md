@@ -1,13 +1,15 @@
-# zkPass-tutorial-examples
-Example repo for integrating with zkPass protocol.
+# zkPass- free Code Camp Account Verification
 
-For more information, see [here](https://zkpass.gitbook.io/zkpass).
+![alt text](<Screenshot 2024-10-17 225454.png>)
 
-# Explore samples
+# Directory structure
+
 The directory structure is as follows:
-- front-end-JS-SDK: tutorial example for integrating zkPass Extension JS-SDK
-- schemas: example for some schemas
-- contracts: example for contracts
+
+- front-end-JS-SDK
+- schemas
+- contracts
 
 # License
+
 All codes are licensed under the Apache License, Version 2.0.

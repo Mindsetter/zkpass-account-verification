@@ -1,0 +1,26 @@
+{
+  "issuer": "Devfolia",
+  "desc": "A platform for Developers or Builders",
+  "website": "https://devfolio.co/discover",
+  "APIs": [
+    {
+      "host": "api.devfolio.co",
+      "intercept": {
+        "url": "api/users/?=?/basic_info",
+        "method": "GET"
+      },
+      "assert": [
+        {
+          "key": "email_verified",
+          "value": "true",
+          "operation": "="
+        }
+      ],
+      "nullifier": "uuid"
+    }
+  ],
+  "HRCondition": ["Devfolio Account Owner"],
+  "tips": {
+    "message": "When you successfully log in, please click the 'Start' button to initiate the verification process."
+  }
+}

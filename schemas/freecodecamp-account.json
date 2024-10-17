@@ -1,0 +1,26 @@
+{
+  "issuer": "free Code Camp",
+  "desc": "Learn to code platform",
+  "website": "https://www.freecodecamp.org",
+  "APIs": [
+    {
+      "host": "api.freecodecamp.org",
+      "intercept": {
+        "url": "user/get-session-user",
+        "method": "GET"
+      },
+      "assert": [
+        {
+          "key": "result",
+          "value": " ",
+          "operation": "!="
+        }
+      ],
+      "nullifier": "result"
+    }
+  ],
+  "HRCondition": ["free Code Camp Account Owner"],
+  "tips": {
+    "message": "When you successfully log in, please click the 'Start' button to initiate the verification process."
+  }
+}

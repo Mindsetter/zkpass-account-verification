@@ -1,6 +1,6 @@
 # zkPass- free Code Camp Account Verification
 
-![alt text](<Screenshot 2024-10-17 225454.png>)
+![alt text](<Screenshot 2024-10-19 174803.png>)
 
 # How to execute or run
 

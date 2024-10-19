@@ -67,6 +67,10 @@ const SubTitle = ({ children }: { children: React.ReactNode }) => (
   <h4 className="text-white text-center">{children}</h4>
 );
 
+const Para = ({ children }: { children: React.ReactNode }) => (
+  <p className="text-white text-center space-x-1">{children}</p>
+);
+
 declare global {
   interface Window {
     ethereum: any;
@@ -135,7 +139,7 @@ export default function Home() {
 
       const t = await contract.attest(chainParams);
       setAttestAtationTx(t.hash);
-      alert("Transaction sent successfully!");
+      alert("Congratulations! You're Eligible!");
     } catch (err) {
       alert(JSON.stringify(err));
       console.log("error", err);
@@ -144,10 +148,38 @@ export default function Home() {
 
   return (
     <main className={styles.main}>
-      <Title>free Code Camp Account Verification</Title>
+      <Title>2025 Bootcamp for Developers Assessment</Title>
+      <p style={{ margin: "20px" }}></p>
       <SubTitle>
-        Click "Verify" to verify if you have free Code Camp account
+        As part of our Bootcamp eligibility criteria, we'd like to know if you
+        have any coding background or experience.
       </SubTitle>
+      <p style={{ margin: "5px" }}></p>
+      <SubTitle>
+        SignUp Or Login and optionally Complete any of the coding challenges
+        here:{" "}
+        <a href="https://www.freecodecamp.org/" target="_blank">
+          FREE CODE CAMP.
+        </a>{" "}
+        Follow the instructions below to verify your account.
+      </SubTitle>
+      <p style={{ margin: "30px" }}></p>
+      <SubTitle>
+        We highly recommend you to use chrome browser for the account
+        verification. Please install zkPass TransGate here:{" "}
+        <a
+          href="https://chromewebstore.google.com/detail/zkpass-transgate/afkoofjocpbclhnldmmaphappihehpma"
+          target="_blank"
+        >
+          LINK.
+        </a>{" "}
+      </SubTitle>
+      <p style={{ margin: "15px" }}></p>
+      <Para>
+        Click "Verify" to verify if you have created your free Code Camp
+        account.
+      </Para>
+      <p style={{ margin: "15px" }}></p>
       <FormGrid>
         <FormContainer>
           <FormItem>

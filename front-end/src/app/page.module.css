@@ -1,7 +1,11 @@
 .main {
-  display: flex;  
+  display: flex;
   flex-direction: column;
   padding: 6rem;
   min-height: 100vh;
   background-color: #000000;
+}
+
+.spaceBetween {
+  margin-right: 20px;
 }
